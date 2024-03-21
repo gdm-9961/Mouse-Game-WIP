@@ -10,7 +10,7 @@ public class MouseController : MonoBehaviour
   
     // Move player in 2D space
     public float maxSpeed = 5.0f;
-    public float jumpHeight = 10.0f;
+    public float jumpHeight = 25.0f;
     public float gravityScale = 2.5f;
     public Camera mainCamera;
 
@@ -73,7 +73,7 @@ public class MouseController : MonoBehaviour
         }
 
         // Jumping
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        if (Input.GetKeyDown(KeyCode.W) && isGrounded)
         {
             r2d.velocity = new Vector2(r2d.velocity.x, jumpHeight);
             isGrounded = false;

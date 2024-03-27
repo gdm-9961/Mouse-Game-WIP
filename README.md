@@ -1,6 +1,6 @@
 # Mouse-Game-WIP
  
-## Controls
+### Controls
 
 **W** - Jump
 
